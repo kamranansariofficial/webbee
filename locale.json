@@ -1,0 +1,306 @@
+{
+  "en": {
+    "home": {
+      "navbar": {
+        "hotel": "Hotel",
+        "flight": "Flight",
+        "language": " العربية",
+        "currency": {
+          "SAR": "Saudi Riyal",
+          "AED": "United Arab Emirates dirham ",
+          "EUR": "Euro",
+          "KWD": "kuwaiti Dinar",
+          "USD": "United States Dollar",
+          "EGP": "Egyptian Pound",
+          "BHD": "Bahraini Dinar",
+          "OMR": "Omani Rial ",
+          "QAR": "Qatari Riyal "
+        },
+        "signIn": "Sign In",
+        "signUp": "Sign Up"
+      },
+      "hero": {
+        "heading": "Your new travel mate",
+        "description": "Book Hotels & Flights at The Best price.",
+        "flight": "flights",
+        "hotel": "hotels"
+      },
+      "featuredHotels": {
+        "heading": "Featured hotels",
+        "description": "Choose from the best featured hotels worldwide offering the best price. Book your trip now! Find the best featured hotels around the world with almatar",
+
+        "card1": {
+          "heading": "Ascott Tahlia Jeddah",
+          "location": "Jeddah"
+        },
+        "card2": {
+          "heading": "Durrat Al Riyadh Resort & Spa",
+          "location": "Riyadh"
+        },
+        "card3": {
+          "heading": "Madinah Hilton",
+          "location": "Medina"
+        }
+      },
+      "popularDestinations": {
+        "heading": "Popular destinations during this month",
+        "description": "Book the best hotels we have chosen for you at the best price Find out the best hotels to the world's most famous cities",
+        "destination1": "AL KHOBAR",
+        "destination2": "JEDDAH",
+        "destination3": "TAIF",
+        "destinatio4": "ABHA"
+      },
+      "topFlight": {
+        "heading": "Top Flight Destinations",
+        "description": "Get the best flight deal for top airlines with more than 500 airlines",
+        "flights": {
+          "saudi": "Saudi Arabian Airlines",
+          "gulf": "Gulf Airlines",
+          "emirates": "Emirates Airlines",
+          "egyptAir": "Egypt Airline ",
+          "etihadAirways": "Etihad Airways ",
+          "saudiGul": "SaudiGulf  Airline ",
+          "roots": {
+            "riyadh": "Riyadh",
+            "jeddah": "jeddah",
+            "dammam": "Dammam",
+            "madina": "Madinah",
+            "manama": "Manama",
+            "dubai": "Dubai",
+            "london": "London",
+            "losAngeles": "Los Angeles",
+            "Cairo": "Cairo",
+            "abuDhabi": "Abu Dhabi",
+            "Abha": "Abha"
+          }
+        },
+        "heading2": "almatar features",
+        "features1": "Over 500 Airlines",
+        "features2": "Over 1 Million hotels worldwide",
+        "features3": "Inclusive Prices (Taxes & Fees)",
+        "features4": "Safe & Secure Payment Options",
+
+        "downloadAlmatar": {
+          "heading": "DOWNLOAD ALMATAR APP & GET THE LATEST OFFERS",
+          "description": "Download almatar app now for easier hotel & flights bookings. Enjoy the best booking experience."
+        },
+        "popularAirlines": {
+          "heading": "Popular Airlines",
+          "emiratesAirlines": "Emirates Airlines",
+          "gulfAirlines": "Gulf Air",
+          "egyptAir": "Egypt Air",
+          "flynasAirlines": "Flynas Airlines",
+          "saudiArabian": "Saudi Arabian Airlines"
+        },
+        "topHotelsInCountries": {
+          "heading": "Top Hotels In Countries",
+          "jordan": "Jordan",
+          "kuwait": "Kuwait",
+          "bahrain": "Bahrain",
+          "unitedArabEmirates": "United Arab Emirates",
+          "saudiArabia": "Saudi Arabia",
+          "Egypt": "Egypt"
+        },
+        "topHotelsDestinations": {
+          "heading": "Top Hotels Destinations",
+          "riyadh": "Riyadh",
+          "dammam": "Dammam",
+          "alKhobar": "Al Khobar",
+          "dubai": "Dubai",
+          "jeddah": "Jeddah",
+          "cairo": "Cairo"
+        },
+        "footer": {
+          "heading": {
+            "almatar": "almatar",
+            "needHelp": "Need Help?",
+            "downloadOurApp": "Download our app now!"
+          },
+          "menu": {
+            "aboutUs": "About Us",
+            "careers": "Careers",
+            "privacyPolicy": "Privacy Policy",
+            "faqs": "FAQs",
+            "contactUs": "Contact Us",
+            "register": "Register",
+            "number": "( +966 ) 92 000 55 11",
+            "support": "support@almatar.com"
+          }
+        },
+        "subFooter": {
+          "copyRight": " © 2021 almatar.",
+          "right": "All rights reserved",
+          "menu": {
+            "term": "Terms",
+            "privacyPolicy": "Privacy Policy",
+            "sitMap": "Site Map",
+            "language": " العربية"
+          },
+          "currency": {
+            "SAR": "Saudi Riyal",
+            "AED": "United Arab Emirates dirham ",
+            "EUR": "Euro",
+            "KWD": "kuwaiti Dinar",
+            "USD": "United States Dollar",
+            "EGP": "Egyptian Pound",
+            "BHD": "Bahraini Dinar",
+            "OMR": "Omani Rial ",
+            "QAR": "Qatari Riyal "
+          }
+        }
+      }
+    }
+  },
+  "ar": {
+    "home": {
+      "navbar": {
+        "hotel": "فنادق",
+        "flight": "طيران",
+        "language": "English",
+        "currency": {
+          "SAR": "ريال سعودي ",
+          "AED": "درهم ماراتي ",
+          "EUR": "يورو ",
+          "KWD": "الدينار الكويتي ",
+          "USD": "دولار ",
+          "EGP": "جنيه مصري ",
+          "BHD": "دينار بحريني ",
+          "OMR": "ريال عماني  ",
+          "QAR": "ريال قطري "
+        },
+        "signIn": "تسجيل دخول",
+        "signUp": "حساب جديد"
+      },
+      "hero": {
+        "heading": "صديقك الجديد للسفر",
+        "description": "حجز فنادق وطيران بأفضل الأسعار.",
+        "flight": "طيران",
+        "hotel": "فنادق"
+      },
+      "featuredHotels": {
+        "heading": "الفنادق المميزة",
+        "description": "تعرف على أفضل الفنادق المختارة لك حول العالم و احجز فندقك بأفضل الأسعار",
+
+        "card1": {
+          "heading": "أسكوت التحلية جدة",
+          "location": "Jeddah"
+        },
+        "card2": {
+          "heading": "منتجع و سبا درة الرياض",
+          "location": "Riyadh"
+        },
+        "card3": {
+          "heading": "فندق المدينة هيلتون",
+          "location": "Medina"
+        }
+      },
+      "popularDestinations": {
+        "heading": "أشهر الوجهات خلال هذا الشهر",
+        "description": "تعرف على أفضل الفنادق في أجمل المدن العالميةاحجز الآن بأفضل الأسعار",
+        "destination1": "الخبر",
+        "destination2": "جدة",
+        "destination3": "الطائف",
+        "destinatio4": " أبها"
+      },
+      "topFlight": {
+        "heading": "أفضل أسعار تذاكر الطيران مع أشهر خطوط الطيران العالمية",
+        "description": "تعرف على أرخص حجوزات الطيران واختر من بين أكثر من 500 خط طيران بأفضل الأسعار",
+        "flights": {
+          "saudi": "الخطوط السعودية",
+          "gulfAir": "طيران الخليج",
+          "emirates": "الإماراتية",
+          "egyptAir": "مصر للطيران ",
+          "etihadAirways": "الإتحاد للطيران ",
+          "saudiGulf": "الخطوط السعودية الخليجية",
+          "roots": {
+            "riyadh": "الرياض",
+            "jeddah": "جدة",
+            "dammam": "الدمام",
+            "madina": "المدينه المنوره",
+            "manama": "المنامة",
+            "dubai": "دبي",
+            "london": "لندن",
+            "losAngeles": "لوس انجلوس",
+            "Cairo": "القاهرة",
+            "abuDhabi": "أبوظبي",
+            "Abha": "أبها"
+          }
+        },
+        "heading2": "مميزات المطار   ",
+        "features1": "أكثر من 500 شركة طيران",
+        "features2": " أكثر من مليون فندق حول العالم",
+        "features3": "اسعارنا شاملة الخدمة و الضريبة",
+        "features4": "وسائل دفع آمنة و مضمونة",
+
+        "downloadAlmatar": {
+          "heading": "حمّل تطبيق المطار واحصل على أحدث العروض",
+          "description": "حمل تطبيق المطار الآن واحصل على أحدث عروض حجز الفنادق و حجز الطيران ، استمتع بأفضل تجربة سفر مع المطار."
+        },
+        "popularAirlines": {
+          "heading": "شركات الطيران الشائعة",
+          "emiratesAirlines": "طيران الإمارات",
+          "gulfAirlines": "طيران الخليج",
+          "egyptAir": "مصر للطيران",
+          "flynasAirlines": "طيران ناس",
+          "saudiArabian": "الخطوط الجوية العربية السعودية"
+        },
+        "topHotelsInCountries": {
+          "heading": "أفضل الفنادق في العالم",
+          "jordan": "الأردن",
+          "kuwait": "الكويت",
+          "bahrain": "البحرين",
+          "unitedArabEmirates": "الإمارات العربية المتحدة",
+          "saudiArabia": "المملكة العربية السعودية",
+          "Egypt": "مصر"
+        },
+        "topHotelsDestinations": {
+          "hotel": "أفضل وجهات الفنادق",
+          "riyadh": "الرياض",
+          "dammam": "الدمام",
+          "alKhobar": "الخبر",
+          "dubai": "دبي",
+          "jeddah": "جدة",
+          "cairo": "القاهرة"
+        },
+        "footer": {
+          "heading": {
+            "almatar": "المطار",
+            "needHelp": "طلب مساعدة؟",
+            "downloadOurApp": "حمل تطبيقنا الآن!"
+          },
+          "menu": {
+            "aboutUs": "عن الشركة",
+            "careers": "الوظائف",
+            "privacyPolicy": " سياسة الخصوصية",
+            "faqs": "الأسئلة المتكررة",
+            "contactUs": "تواصل معنا",
+            "register": "تسجيل ",
+            "number": "( +966 ) 92 000 55 11",
+            "support": "support@almatar.com"
+          }
+        },
+        "subFooter": {
+          "copyRight": " © 2021 almatar.",
+          "right": " جميع الحقوق محفوظة",
+          "menu": {
+            "term": "الشروط والأحكام",
+            "privacyPolicy": " سياسة الخصوصية",
+            "sitMap": "خريطة الموقع",
+            "language": " ENGLISH"
+          },
+          "currency": {
+            "SAR": "ريال سعودي ",
+            "AED": "درهم ماراتي ",
+            "EUR": "يورو ",
+            "KWD": "الدينار الكويتي ",
+            "USD": "دولار ",
+            "EGP": "جنيه مصري ",
+            "BHD": "دينار بحريني ",
+            "OMR": "ريال عماني  ",
+            "QAR": "ريال قطري "
+          }
+        }
+      }
+    }
+  }
+}

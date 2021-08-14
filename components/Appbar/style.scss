@@ -1,0 +1,27 @@
+.appbar {
+  & .fab {
+    min-height: 20px;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    &.green {
+      background-color: #388e3c;
+    }
+    &.blue {
+      background-color: #1a76d2;
+    }
+    &.purple {
+      background-color: #1a2138;
+    }
+    &.pink {
+      background-color: #c2185b;
+    }
+    &.yellow {
+      background-color: #f57c01;
+    }
+    & svg {
+      font-size: 12px;
+      color: #fff;
+    }
+  }
+}

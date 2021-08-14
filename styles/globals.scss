@@ -1,0 +1,51 @@
+@font-face {
+  font-family: DroidKufi-Bold;
+  src: url(../public/fonts/droid_arabic_kufi/DroidKufi-Bold.ttf);
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: DroidKufi-Regular;
+  src: url(../public/fonts/droid_arabic_kufi/DroidKufi-Regular.ttf);
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: DroidKufi-Regular;
+}
+a {
+  color: inherit;
+  text-decoration: none !important;
+}
+button {
+  text-transform: none !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (min-width: 600px) {
+  .MuiContainer-maxWidthLg {
+    max-width: none !important;
+  }
+}
+@media (min-width: 1280px) {
+  .MuiContainer-maxWidthLg {
+    max-width: 1190px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .MuiToolbar-root {
+    padding: 0px 0px !important;
+  }
+}
+
+@import "components/Appbar/style";
+@import "components/Home/style";
+
