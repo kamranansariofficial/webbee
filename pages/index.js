@@ -1,5 +1,6 @@
 import React from "react";
 import localeData from "locale.json";
+import { useTheme } from "@material-ui/core/styles";
 import Head from "next/head";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
@@ -15,32 +16,33 @@ import Demo from "../components/Home/demo";
 import Started from "../components/Home/started";
 function Home({ locale }) {
   var localedata = localeData[locale];
-
+  const theme = useTheme();
   return (
-    <div className="home">
+    <div className="home" bgcolor={theme.palette.background.paper}>
       <Head>
         <title>Webbee | Techgater</title>
         <meta name="description" content="Almatar | Techgater" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="hero">
+        <Box py={4}/>
         <Container>
           <Grid container spacing={2}>
             <Grid item md={6} sm={12}>
-              <Box py={8} />
+              <Box py={12} />
               <Typography
                 variant="h2"
                 fontWeight={700}
                 mb={3}
-                sx={{ color: "rgb(45, 55, 72)" }}
+            color="textPrimary"
               >
-                Turn your ideas into a <span>future.|</span>
+                Turn your ideas <br/>into a <span>future.|</span>
               </Typography>
               <Typography
                 variant="p"
                 fontSize="20px"
                 fontWeight={400}
-                sx={{ color: "#969da1" }}
+                color="textSecondary"
                 mb={3}
               >
                 Webbee will make your product look modern and professional while
@@ -70,9 +72,9 @@ function Home({ locale }) {
       </div>
       <Hero />
       <Features />
-      <Cards/>
-      <Demo/>
-      <Started/>
+      <Cards />
+      <Demo />
+      <Started />
     </div>
   );
 }

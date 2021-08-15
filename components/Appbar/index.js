@@ -23,7 +23,10 @@ export default function ButtonAppBar({ selectedColor, onChangeMode }) {
   return (
     <div className="appbar">
       <Box sx={{ flexGrow: 1 }}>
-        <AppBar position="fixed" color="inherit">
+        <AppBar
+          position="fixed"
+          sx={{ bgcolor: theme.palette.background.paper }}
+        >
           <Container fixed>
             <Toolbar>
               <IconButton

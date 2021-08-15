@@ -5,6 +5,7 @@ import Box from "@material-ui/core/Box";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
+import { useTheme } from "@material-ui/core/styles";
 function cards() {
   const value = [
     {
@@ -140,6 +141,7 @@ function cards() {
         "6 months of free technical support to help you build your website faster.",
     },
   ];
+  const theme = useTheme();
   return (
     <div className="cards">
       <Container>
@@ -151,12 +153,12 @@ function cards() {
                 <CardContent>
                   <Box
                     borderRadius={50}
-                    bgcolor="rgb(0, 171, 85)"
                     display="inline-grid"
                     width={50}
                     height={50}
                     p="13px"
                     mb={2}
+                    bgcolor={theme.palette.primary.main}
                   >
                     {item.img}
                   </Box>

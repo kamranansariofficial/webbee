@@ -58,8 +58,12 @@ export default function MyApp(props) {
         main: "#272d59",
       },
       background: {
-        paper: state.darkMode ? "#1A2138" : "#ffffff",
-        default: state.darkMode ? "#2C354E" : "#ffffff",
+        paper: state.darkMode ? "rgb(34, 43, 69)" : "#ffffff",
+        default: state.darkMode ? "rgb(26, 33, 56)" : "#F7F9FC",
+      },
+      text:{
+        primary: state.darkMode ?"#ffffff":"#2D3748",
+        secondary:"#969da1"
       },
       mode: state.darkMode ? "dark" : "light",
     },

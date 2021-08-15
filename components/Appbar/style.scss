@@ -1,4 +1,8 @@
 .appbar {
+  & header{
+    box-shadow: rgb(0 0 0 / 25%) 0px 3px 6px 0px;
+    background-image: none;
+  }
   & .fab {
     min-height: 20px;
     width: 20px;
