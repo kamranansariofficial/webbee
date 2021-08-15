@@ -36,15 +36,15 @@ export default function MyApp(props) {
   const checkColor = (v) => {
     switch (v) {
       case "green":
-        return "#388e3c";
+        return "rgb(56, 142, 60)";
       case "blue":
-        return "#1a76d2";
+        return "rgb(26, 118, 210)";
       case "yellow":
-        return "#f57c01";
+        return "rgb(245, 123, 1)";
       case "purple":
-        return "#1a2138";
+        return "rgb(26, 33, 56)";
       default:
-        return "#c2185b";
+        return "rgb(194, 24, 92)";
       // code block
     }
   };
