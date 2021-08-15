@@ -42,7 +42,7 @@ export default function MyApp(props) {
       case "yellow":
         return "rgb(245, 123, 1)";
       case "purple":
-        return "rgb(26, 33, 56)";
+        return "rgb(48, 63, 159)";
       default:
         return "rgb(194, 24, 92)";
       // code block
@@ -61,9 +61,9 @@ export default function MyApp(props) {
         paper: state.darkMode ? "rgb(34, 43, 69)" : "#ffffff",
         default: state.darkMode ? "rgb(26, 33, 56)" : "#F7F9FC",
       },
-      text:{
-        primary: state.darkMode ?"#ffffff":"#2D3748",
-        secondary:"#969da1"
+      text: {
+        primary: state.darkMode ? "#ffffff" : "#2D3748",
+        secondary: "#969da1",
       },
       mode: state.darkMode ? "dark" : "light",
     },
@@ -74,7 +74,6 @@ export default function MyApp(props) {
       },
     },
   });
-  console.log(state.darkMode);
 
   return (
     <CacheProvider value={props.router.locale === "ar" ? cache : cacheLtr}>
