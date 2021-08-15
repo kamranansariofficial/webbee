@@ -12,7 +12,7 @@ import NightsStayOutlinedIcon from "@material-ui/icons/NightsStayOutlined";
 import WbSunnyIcon from "@material-ui/icons/WbSunny";
 import Darwer from "components/Appbar/Drawer";
 export default function ButtonAppBar({ selectedColor, onChangeMode }) {
-  const [color, setcolor] = React.useState("pink");
+  const [color, setcolor] = React.useState("green");
   const [darkMode, setDarkMode] = React.useState(false);
   const theme = useTheme();
   return (
@@ -85,7 +85,7 @@ export default function ButtonAppBar({ selectedColor, onChangeMode }) {
                   }}
                   color="primary"
                 >
-                  {darkMode ? <NightsStayOutlinedIcon /> : <WbSunnyIcon />}
+                  {!darkMode ? <NightsStayOutlinedIcon /> : <WbSunnyIcon />}
                 </IconButton>
                 <Button  size="large">
                   Home
