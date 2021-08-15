@@ -10,6 +10,7 @@ import Grid from "@material-ui/core/Grid";
 import ClearIcon from "@material-ui/icons/Clear";
 import Container from "@material-ui/core/Container";
 import Button from "@material-ui/core/Button";
+import Link from "@material-ui/core/Link";
 export default function TemporaryDrawer() {
   const [state, setState] = React.useState({
     top: false,
@@ -30,14 +31,14 @@ export default function TemporaryDrawer() {
   };
 
   const list = (anchor) => (
-    <Box
-      sx={{ width: anchor === "top" || anchor === "bottom" ? "auto" : 400 }}
-      role="presentation"
-      onClick={toggleDrawer(anchor, false)}
-      onKeyDown={toggleDrawer(anchor, false)}
-    >
+    <Box sx={{ width: 400 }} role="presentation">
       <Box px={3}>
-        <IconButton size="large" edge="start" sx={{ float: "right" }}>
+        <IconButton
+          onClick={toggleDrawer(anchor, false)}
+          size="large"
+          edge="start"
+          sx={{ float: "right" }}
+        >
           <ClearIcon />
         </IconButton>
         <Box pt={4} mb={2}>
@@ -60,8 +61,14 @@ export default function TemporaryDrawer() {
             "Travel",
             "Event",
           ].map((text) => (
-            <Grid item md={6} sm={12} key={text}>
-              <Typography fontSize={14}>{text}</Typography>
+            <Grid item md={6} sm={12} xs={12} key={text}>
+              <Link
+                color="textPrimary"
+                onClick={toggleDrawer(anchor, false)}
+                fontSize={14}
+              >
+                {text}
+              </Link>
             </Grid>
           ))}
         </Grid>
@@ -85,8 +92,14 @@ export default function TemporaryDrawer() {
             "Cover",
             "Not Found",
           ].map((text) => (
-            <Grid item md={6} key={text}>
-              <Typography fontSize={14}>{text}</Typography>
+            <Grid item md={6} sm={12} xs={12} key={text}>
+              <Link
+                color="textPrimary"
+                onClick={toggleDrawer(anchor, false)}
+                fontSize={14}
+              >
+                {text}
+              </Link>
             </Grid>
           ))}
         </Grid>
@@ -104,8 +117,14 @@ export default function TemporaryDrawer() {
             "Forget Passward",
             "Forget Passward Simple",
           ].map((text) => (
-            <Grid item md={6} key={text}>
-              <Typography fontSize={14}>{text}</Typography>
+            <Grid item md={6} sm={12} xs={12} key={text}>
+              <Link
+                color="textPrimary"
+                onClick={toggleDrawer(anchor, false)}
+                fontSize={14}
+              >
+                {text}
+              </Link>
             </Grid>
           ))}
         </Grid>
@@ -113,10 +132,11 @@ export default function TemporaryDrawer() {
         <Button size="large" color="primary" variant="outlined" fullWidth>
           Documentation
         </Button>
-        <Box py={1} />
-        <Button color="primary" variant="contained" size="large" fullWidth>
-          Purchase now
-        </Button>
+        <Box py={1}>
+          <Button color="primary" variant="contained" size="large" fullWidth>
+            Purchase now
+          </Button>
+        </Box>
       </Box>
     </Box>
   );

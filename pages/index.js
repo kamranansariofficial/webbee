@@ -29,7 +29,7 @@ function Home({ locale }) {
         <Container>
           <Grid container spacing={2}>
             <Grid item md={6} sm={12}>
-              <Box py={10} />
+              <Box p={10} className="hero-column" />
               <Typography
                 variant="h2"
                 fontWeight={700}
@@ -63,12 +63,12 @@ function Home({ locale }) {
                 Webbee will make your product look modern and professional while
                 saving you precious time.
               </Typography>
-              <Box my={4}>
+              <Box mt={4}>
                 <Button
                   color="primary"
                   variant="contained"
                   size="large"
-                  sx={{ mr: "20px" }}
+                  sx={{ mr: "20px"}}
                 >
                   Purchase now
                 </Button>
@@ -78,7 +78,7 @@ function Home({ locale }) {
               </Box>
             </Grid>
             <Grid item md={6} sm={12}>
-              <Box py={10}>
+              <Box py={10} className>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="100%"

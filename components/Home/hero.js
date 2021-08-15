@@ -77,7 +77,7 @@ function hero() {
   return (
     <Box sx={{ bgcolor: theme.palette.background.paper }}>
       <Container>
-        <Box py={5} />
+        <Box className="design" pt={8} />
         <Grid container spacing={2}>
           {Data.map((item, i) => (
             <Grid item md={4} sm={12} key={Math.random()} textAlign="center">

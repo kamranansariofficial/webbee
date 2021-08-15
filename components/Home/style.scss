@@ -6,7 +6,27 @@ $media-tablet: "only screen and (max-width : 600px)";
   }
 }
 @media #{$media-tablet} {
+  .hero {
+    & .hero-column {
+      padding: 0 !important;
+    }
+    & .hero-svg {
+      padding: 0 !important;
+    }
+    & button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    svg {
+      height: 324px;
+      width: 324px;
+    }
+  }
   .features {
+    & .MuiBox-root {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
     .svg-box {
       svg {
         width: 300px;
@@ -14,12 +34,21 @@ $media-tablet: "only screen and (max-width : 600px)";
     }
   }
   h2 {
-    font-size: 2.9167rem;
+    font-size: 2.9167rem !important;
   }
   h3 {
-    font-size: 2rem;
+    font-size: 2rem !important;
   }
   p {
-    font-size: 1.25rem;
+    font-size: 1.25rem !important;
+  }
+  .design {
+    padding-top: 10px;
+  }
+  .demo {
+    & button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
   }
 }

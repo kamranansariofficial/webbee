@@ -13,7 +13,7 @@ export default function demo() {
   return (
     <Box>
       <Container>
-        <Box textAlign="center" pt={8}>
+        <Box className="demo" textAlign="center" pt={8}>
           <Typography
             variant="p"
             fontWeight={500}
