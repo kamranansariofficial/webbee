@@ -30,7 +30,7 @@ const jssLtr = create({
 export default function MyApp(props) {
   const { Component, pageProps } = props;
   const [state, setstate] = React.useState({
-    selected: "#c2185b",
+    selected: "rgb(56, 142, 60)",
     darkMode: false,
   });
   const checkColor = (v) => {
