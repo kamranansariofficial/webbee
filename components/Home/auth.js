@@ -32,12 +32,7 @@ export default function landing() {
   ];
   return (
     <div>
-      <Typography
-        variant="h5"
-        fontWeight={700}
-        mb={2}
-        sx={{ color: "rgb(45, 55, 72)" }}
-      >
+      <Typography variant="h5" fontWeight={700} mb={4} color="textPrimary">
         Auth Pages
       </Typography>
       <Grid
@@ -62,7 +57,7 @@ export default function landing() {
                 fontSize={15}
                 fontWeight={700}
                 mb={1}
-                sx={{ color: "rgb(45, 55, 72)" }}
+                color="textPrimary"
               >
                 {item.heading}
               </Typography>
@@ -70,7 +65,7 @@ export default function landing() {
                 variant="p"
                 fontSize={16}
                 fontWeight={400}
-                sx={{ color: "rgb(100, 110, 115)" }}
+                color="textSecondary"
               >
                 {item.paragraph}
               </Typography>
@@ -79,7 +74,7 @@ export default function landing() {
                   variant="h6"
                   fontSize={14}
                   fontWeight={500}
-                  sx={{ color: "rgb(0, 171, 85)" }}
+                  color="primary"
                 >
                   view demo
                 </Link>

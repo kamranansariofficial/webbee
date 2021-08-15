@@ -13,25 +13,23 @@ function features() {
           <Typography
             variant="p"
             fontWeight={500}
-            sx={{ color: "rgb(100, 110, 115)" }}
+            color="textSecondary"
+            sx={{ textTransform: "uppercase" }}
+            mb={1}
           >
-           Get started
+            Get started
           </Typography>
-          <Typography
-            variant="h3"
-            fontWeight={700}
-            mb={2}
-            sx={{ color: "rgb(45, 55, 72)" }}
-          >
+          <Typography variant="h3" fontWeight={700} mb={2} color="textPrimary">
             Get started with Webbee today
           </Typography>
           <Typography
             variant="p"
             fontWeight={500}
             fontSize="20px"
-            sx={{ color: "rgb(100, 110, 115)" }}
+            color="textSecondary"
           >
-            Build a beautiful, modern website with flexible, fully customizable, atomic Material-UI components.
+            Build a beautiful, modern website with flexible, fully customizable,
+            atomic Material-UI components.
           </Typography>
           <Box mt={3}>
             <Button color="primary" variant="contained" size="large">
@@ -41,7 +39,7 @@ function features() {
           </Box>
         </Box>
       </Container>
-      <Divider/>
+      <Divider />
     </div>
   );
 }

@@ -7,31 +7,29 @@ import ArrowRightAltIcon from "@material-ui/icons/ArrowRightAlt";
 import Landing from "../Home/landing";
 import Supporting from "../Home/supporting";
 import Auth from "../Home/auth";
+import { useTheme } from "@material-ui/core/styles";
 export default function demo() {
+  const theme = useTheme();
   return (
-    <div className="demo-page">
+    <Box>
       <Container>
-        <Box textAlign="center" py={8}>
+        <Box textAlign="center" pt={8}>
           <Typography
             variant="p"
             fontWeight={500}
-            sx={{ color: "rgb(100, 110, 115)", textTransform: "uppercase" }}
+            color="textPrimary"
+            sx={{ textTransform: "uppercase" }}
           >
             Demo pages
           </Typography>
-          <Typography
-            variant="h3"
-            fontWeight={700}
-            mb={2}
-            sx={{ color: "rgb(45, 55, 72)" }}
-          >
+          <Typography variant="h3" fontWeight={700} mb={2} color="textPrimary">
             Webbee in action
           </Typography>
           <Typography
             variant="p"
             fontWeight={500}
             fontSize="20px"
-            sx={{ color: "rgb(100, 110, 115)" }}
+            color="textSecondary"
           >
             All examples you find below are included in the download package.
           </Typography>
@@ -52,8 +50,8 @@ export default function demo() {
         </Box>
         <Landing />
         <Supporting />
-        <Auth/>
+        <Auth />
       </Container>
-    </div>
+    </Box>
   );
 }

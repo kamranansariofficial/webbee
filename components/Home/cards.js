@@ -143,7 +143,7 @@ function cards() {
   ];
   const theme = useTheme();
   return (
-    <div className="cards">
+    <Box className="cards" sx={{ bgcolor: theme.palette.background.paper }}>
       <Container>
         <Box py={2} />
         <Grid container spacing={2}>
@@ -165,7 +165,7 @@ function cards() {
                   <Typography variant="h5" mb={2}>
                     {item.heading}
                   </Typography>
-                  <Typography color="text.secondary">
+                  <Typography color="textSecondary">
                     {item.paragraph}
                   </Typography>
                 </CardContent>
@@ -175,7 +175,7 @@ function cards() {
         </Grid>
         <Box py={3} />
       </Container>
-    </div>
+    </Box>
   );
 }
 

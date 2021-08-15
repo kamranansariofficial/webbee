@@ -4,32 +4,24 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import Box from "@material-ui/core/Box";
 import ArrowRightAltIcon from "@material-ui/icons/ArrowRightAlt";
-
+import { useTheme } from "@material-ui/core/styles";
 function features() {
+  const theme = useTheme();
   return (
-    <div className="features">
+    <Box className="features" sx={{ bgcolor: theme.palette.background.paper }}>
       <Container fixed>
         <Box textAlign="center" py={6}>
-          <Typography
-            variant="p"
-            fontWeight={500}
-            sx={{ color: "rgb(100, 110, 115)" }}
-          >
+          <Typography variant="p" fontWeight={500} color="textPrimary">
             FEATURES
           </Typography>
-          <Typography
-            variant="h3"
-            fontWeight={700}
-            mb={2}
-            sx={{ color: "rgb(45, 55, 72)" }}
-          >
+          <Typography variant="h3" fontWeight={700} mb={2} color="textPrimary">
             The powerful and flexible theme<br></br> for all kinds of businesses
           </Typography>
           <Typography
             variant="p"
             fontWeight={500}
             fontSize="20px"
-            sx={{ color: "rgb(100, 110, 115)" }}
+            color="textSecondary"
           >
             Build a beautiful, modern website with flexible, fully customizable,
             atomic Material-UI components.<br></br>An experience you'd expect
@@ -196,7 +188,7 @@ function features() {
           </svg>
         </Box>
       </Container>
-    </div>
+    </Box>
   );
 }
 
