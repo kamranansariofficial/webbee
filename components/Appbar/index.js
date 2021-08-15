@@ -39,6 +39,7 @@ export default function ButtonAppBar({ selectedColor, onChangeMode }) {
               <Box ml="auto">
                 {["green", "blue", "purple", "pink", "yellow"].map((v) => (
                   <Fab
+                    key={Math.random()}
                     onClick={() => {
                       setcolor(v);
                       selectedColor(v);
