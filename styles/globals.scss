@@ -26,6 +26,10 @@ button {
   text-transform: none !important;
 }
 
+.Typewriter {
+  display: inline-block;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -48,4 +52,3 @@ button {
 
 @import "components/Appbar/style";
 @import "components/Home/style";
-
