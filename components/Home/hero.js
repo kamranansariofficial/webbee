@@ -75,9 +75,7 @@ function hero() {
   ];
   const theme = useTheme();
   return (
-    <Box
-      sx={{ bgcolor: theme.palette.background.paper }}
-    >
+    <Box sx={{ bgcolor: theme.palette.background.paper }}>
       <Container>
         <Box py={5} />
         <Grid container spacing={2}>

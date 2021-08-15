@@ -45,7 +45,7 @@ export default function landing() {
           <Grid
             item
             md={4}
-            sm={12}
+            sm={6}
             xs={12}
             key={Math.random()}
             borderRight="1px solid rgba(0, 0, 0, 0.12)"

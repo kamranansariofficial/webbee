@@ -5,18 +5,16 @@ import Box from "@material-ui/core/Box";
 import Toolbar from "@material-ui/core/Toolbar";
 import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
-import MenuIcon from "@material-ui/icons/Menu";
 import { Container } from "@material-ui/core";
 import Fab from "@material-ui/core/Fab";
 import CheckIcon from "@material-ui/icons/Check";
 import NightsStayOutlinedIcon from "@material-ui/icons/NightsStayOutlined";
 import WbSunnyIcon from "@material-ui/icons/WbSunny";
-
+import Darwer from "components/Appbar/Drawer";
 export default function ButtonAppBar({ selectedColor, onChangeMode }) {
   const [color, setcolor] = React.useState("pink");
   const [darkMode, setDarkMode] = React.useState(false);
   const theme = useTheme();
-
   return (
     <div className="appbar">
       <Box sx={{ flexGrow: 1 }}>
@@ -26,14 +24,7 @@ export default function ButtonAppBar({ selectedColor, onChangeMode }) {
         >
           <Container fixed>
             <Toolbar>
-              <IconButton
-                size="large"
-                edge="start"
-                aria-label="menu"
-                sx={{ mr: 2, color: "#969da1" }}
-              >
-                <MenuIcon />
-              </IconButton>
+              <Darwer />
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="45px"
@@ -96,10 +87,10 @@ export default function ButtonAppBar({ selectedColor, onChangeMode }) {
                 >
                   {darkMode ? <NightsStayOutlinedIcon /> : <WbSunnyIcon />}
                 </IconButton>
-                <Button sx={{ color: "#969da1" }} size="large">
+                <Button  size="large">
                   Home
                 </Button>
-                <Button sx={{ color: "#969da1" }} size="large">
+                <Button  size="large">
                   Documentation
                 </Button>
                 <Button

@@ -29,7 +29,7 @@ function Home({ locale }) {
         <Container>
           <Grid container spacing={2}>
             <Grid item md={6} sm={12}>
-              <Box py={12} />
+              <Box py={10} />
               <Typography
                 variant="h2"
                 fontWeight={700}

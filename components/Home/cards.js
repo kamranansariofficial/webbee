@@ -148,7 +148,7 @@ function cards() {
         <Box py={2} />
         <Grid container spacing={2}>
           {value.map((item, i) => (
-            <Grid item md={4} sm={12} key={Math.random()}>
+            <Grid item md={4} sm={6} xs={12} key={Math.random()}>
               <Card className="card-data">
                 <CardContent>
                   <Box
