@@ -83,6 +83,7 @@ export default function MyApp(props) {
       </Head>
       <StylesProvider jss={props.router.locale === "ar" ? jss : jssLtr}>
         <ThemeProvider theme={theme}>
+          <CssBaseline />
           <Layout
             selectedColor={(v) =>
               setstate({ ...state, selected: checkColor(v) })
@@ -91,7 +92,6 @@ export default function MyApp(props) {
             onChangeMode={(v) => setstate({ ...state, darkMode: v })}
           >
             {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-            <CssBaseline />
             <Component {...pageProps} />
           </Layout>
         </ThemeProvider>
