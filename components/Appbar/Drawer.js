@@ -1,8 +1,7 @@
 import * as React from "react";
 import Box from "@material-ui/core/Box";
 import Drawer from "@material-ui/core/Drawer";
-import InboxIcon from "@material-ui/icons/MoveToInbox";
-import MailIcon from "@material-ui/icons/Mail";
+import { useTheme } from "@material-ui/core/styles";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import Typography from "@material-ui/core/Typography";
@@ -12,11 +11,13 @@ import Container from "@material-ui/core/Container";
 import Button from "@material-ui/core/Button";
 import Link from "@material-ui/core/Link";
 export default function TemporaryDrawer() {
+  const theme = useTheme();
   const [state, setState] = React.useState({
     top: false,
     left: false,
     bottom: false,
     right: false,
+    active: "",
   });
 
   const toggleDrawer = (anchor, open) => (event) => {
@@ -35,18 +36,18 @@ export default function TemporaryDrawer() {
       <Box px={3}>
         <IconButton
           onClick={toggleDrawer(anchor, false)}
-          size="large"
+          size="medium"
           edge="start"
-          sx={{ float: "right" }}
+          sx={{ float: "right", mr: -2, mt: 1 }}
         >
           <ClearIcon />
         </IconButton>
-        <Box pt={4} mb={2}>
-          <Typography variant="h6" fontSize={15} fontWeight={700}>
+        <Box pt={4} mb={1}>
+          <Typography variant="h6" mt={1.6} fontSize={15} fontWeight={700}>
             Landing Pages
           </Typography>
         </Box>
-        <Grid container spacing={2}>
+        <Grid container spacing={1}>
           {[
             "Advertisment",
             "Payment App",
@@ -63,7 +64,10 @@ export default function TemporaryDrawer() {
           ].map((text) => (
             <Grid item md={6} sm={12} xs={12} key={text}>
               <Link
-                color="textPrimary"
+                href="/"
+                onMouseOver={() => setState({ ...state, active: text })}
+                onMouseOut={() => setState({ ...state, active: "" })}
+                style={{ color: state.active === text ? theme.palette.primary.main : theme.palette.text.primary }}
                 onClick={toggleDrawer(anchor, false)}
                 fontSize={14}
               >
@@ -72,12 +76,12 @@ export default function TemporaryDrawer() {
             </Grid>
           ))}
         </Grid>
-        <Box pt={4} mb={2}>
+        <Box pt={3} mb={1}>
           <Typography variant="h6" fontSize={15} fontWeight={700}>
             Supporting Pages
           </Typography>
         </Box>
-        <Grid container spacing={2}>
+        <Grid container spacing={1}>
           {[
             "About",
             "Services",
@@ -94,21 +98,24 @@ export default function TemporaryDrawer() {
           ].map((text) => (
             <Grid item md={6} sm={12} xs={12} key={text}>
               <Link
-                color="textPrimary"
                 onClick={toggleDrawer(anchor, false)}
+                onMouseOver={() => setState({ ...state, active: text })}
+                onMouseOut={() => setState({ ...state, active: "" })}
+                style={{ color: state.active === text ? theme.palette.primary.main : theme.palette.text.primary }}
                 fontSize={14}
+                href="/"
               >
                 {text}
               </Link>
             </Grid>
           ))}
         </Grid>
-        <Box pt={4} mb={2}>
+        <Box pt={2} mb={1}>
           <Typography variant="h6" fontSize={15} fontWeight={700}>
             Supporting Pages
           </Typography>
         </Box>
-        <Grid container spacing={2}>
+        <Grid container spacing={1}>
           {[
             "Login",
             "Login Simple",
@@ -119,8 +126,11 @@ export default function TemporaryDrawer() {
           ].map((text) => (
             <Grid item md={6} sm={12} xs={12} key={text}>
               <Link
-                color="textPrimary"
+                href="/"
                 onClick={toggleDrawer(anchor, false)}
+                onMouseOver={() => setState({ ...state, active: text })}
+                onMouseOut={() => setState({ ...state, active: "" })}
+                style={{ color: state.active === text ? theme.palette.primary.main : theme.palette.text.primary }}
                 fontSize={14}
               >
                 {text}
@@ -128,7 +138,7 @@ export default function TemporaryDrawer() {
             </Grid>
           ))}
         </Grid>
-        <Box py={3} />
+        <Box py={2} />
         <Button size="large" color="primary" variant="outlined" fullWidth>
           Documentation
         </Button>
@@ -154,11 +164,7 @@ export default function TemporaryDrawer() {
           >
             <MenuIcon />
           </IconButton>
-          <Drawer
-            anchor={anchor}
-            open={state[anchor]}
-            onClose={toggleDrawer(anchor, false)}
-          >
+          <Drawer onClose={toggleDrawer(anchor, false)} anchor={anchor} open={state[anchor]}>
             {list(anchor)}
           </Drawer>
         </React.Fragment>

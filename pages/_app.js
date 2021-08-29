@@ -40,7 +40,7 @@ export default function MyApp(props) {
       case "blue":
         return "rgb(26, 118, 210)";
       case "yellow":
-        return "rgb(245, 123, 1)";
+        return "rgb(242, 102, 0)";
       case "purple":
         return "rgb(48, 63, 159)";
       default:

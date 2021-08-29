@@ -5,6 +5,7 @@ import { Box } from "@material-ui/system";
 import Typography from "@material-ui/core/Typography";
 import { useTheme } from "@material-ui/core/styles";
 function hero() {
+  const theme = useTheme();
   const Data = [
     {
       img: (
@@ -14,7 +15,7 @@ function hero() {
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
-          stroke="#00ab55"
+          stroke={theme.palette.primary.main}
         >
           <path
             strokeLinecap="round"
@@ -36,7 +37,7 @@ function hero() {
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
-          stroke="#00ab55"
+          stroke={theme.palette.primary.main}
         >
           <path
             strokeLinecap="round"
@@ -58,7 +59,7 @@ function hero() {
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
-          stroke="#00ab55"
+          stroke={theme.palette.primary.main}
         >
           <path
             strokeLinecap="round"
@@ -73,7 +74,7 @@ function hero() {
         "We've written extensive documentation for components and tools, so you never have to reverse engineer anything.",
     },
   ];
-  const theme = useTheme();
+
   return (
     <Box sx={{ bgcolor: theme.palette.background.paper }}>
       <Container>

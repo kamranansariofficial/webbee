@@ -11,6 +11,7 @@ import CheckIcon from "@material-ui/icons/Check";
 import NightsStayOutlinedIcon from "@material-ui/icons/NightsStayOutlined";
 import WbSunnyIcon from "@material-ui/icons/WbSunny";
 import Darwer from "components/Appbar/Drawer";
+
 export default function ButtonAppBar({ selectedColor, onChangeMode }) {
   const [color, setcolor] = React.useState("green");
   const [darkMode, setDarkMode] = React.useState(false);
@@ -65,19 +66,29 @@ export default function ButtonAppBar({ selectedColor, onChangeMode }) {
               </svg>
               {/* bgcolor={theme.palette.primary.main} */}
               <Box ml="auto">
-                {["green", "blue", "purple", "pink", "yellow"].map((v) => (
-                  <Fab
-                    key={Math.random()}
-                    onClick={() => {
-                      setcolor(v);
-                      selectedColor(v);
-                    }}
-                    size="small"
-                    className={`fab ${v}`}
-                  >
-                    {color === v && <CheckIcon />}
-                  </Fab>
-                ))}
+                <Box
+                  bgcolor={theme.palette.background.default}
+                  component="span"
+                  pl={1}
+                  pr={0}
+                  pt={1}
+                  pb={1.2}
+                  borderRadius="32px"
+                >
+                  {["green", "blue", "purple", "pink", "yellow"].map((v) => (
+                    <Fab
+                      key={Math.random()}
+                      onClick={() => {
+                        setcolor(v);
+                        selectedColor(v);
+                      }}
+                      size="small"
+                      className={`fab ${v}`}
+                    >
+                      {color === v && <CheckIcon />}
+                    </Fab>
+                  ))}
+                </Box>
                 <IconButton
                   onClick={() => {
                     setDarkMode(!darkMode);
@@ -87,10 +98,10 @@ export default function ButtonAppBar({ selectedColor, onChangeMode }) {
                 >
                   {!darkMode ? <NightsStayOutlinedIcon /> : <WbSunnyIcon />}
                 </IconButton>
-                <Button  size="large">
+                <Button sx={{ color: theme.palette.text.primary }} size="large">
                   Home
                 </Button>
-                <Button  size="large">
+                <Button sx={{ color: theme.palette.text.primary }} size="large">
                   Documentation
                 </Button>
                 <Button

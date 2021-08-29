@@ -95,6 +95,7 @@ export default function landing() {
               </Typography>
               <Box mt={1}>
                 <Link
+                  href="#"
                   variant="h6"
                   fontSize={14}
                   fontWeight={500}

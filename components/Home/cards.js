@@ -146,7 +146,7 @@ function cards() {
     <Box className="cards" sx={{ bgcolor: theme.palette.background.paper }}>
       <Container>
         <Box py={2} />
-        <Grid container spacing={2}>
+        <Grid container spacing={3}>
           {value.map((item, i) => (
             <Grid item md={4} sm={6} xs={12} key={Math.random()}>
               <Card className="card-data">
@@ -162,7 +162,7 @@ function cards() {
                   >
                     {item.img}
                   </Box>
-                  <Typography variant="h5" mb={2}>
+                  <Typography variant="h5" mb={1}>
                     {item.heading}
                   </Typography>
                   <Typography color="textSecondary">
