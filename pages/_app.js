@@ -9,7 +9,7 @@ import createCache from "@emotion/cache";
 import "styles/globals.scss";
 import { create } from "jss";
 import rtl from "jss-rtl";
-import { StylesProvider, jssPreset } from "@material-ui/styles";
+import { jssPreset } from "@material-ui/styles";
 import rtlPlugin from "stylis-plugin-rtl";
 import { createTheme } from "@material-ui/core/styles";
 
@@ -81,21 +81,17 @@ export default function MyApp(props) {
         <title>Almatar | Techgater</title>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
-      <StylesProvider jss={props.router.locale === "ar" ? jss : jssLtr}>
-        <ThemeProvider theme={theme}>
-          <CssBaseline />
-          <Layout
-            selectedColor={(v) =>
-              setstate({ ...state, selected: checkColor(v) })
-            }
-            locale={props.router.locale}
-            onChangeMode={(v) => setstate({ ...state, darkMode: v })}
-          >
-            {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-            <Component {...pageProps} />
-          </Layout>
-        </ThemeProvider>
-      </StylesProvider>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Layout
+          selectedColor={(v) => setstate({ ...state, selected: checkColor(v) })}
+          locale={props.router.locale}
+          onChangeMode={(v) => setstate({ ...state, darkMode: v })}
+        >
+          {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
+          <Component {...pageProps} />
+        </Layout>
+      </ThemeProvider>
     </CacheProvider>
   );
 }
