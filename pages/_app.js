@@ -23,10 +23,6 @@ const jss = create({
   plugins: [...jssPreset().plugins, rtl()],
 });
 
-const jssLtr = create({
-  plugins: [],
-});
-
 export default function MyApp(props) {
   const { Component, pageProps } = props;
   const [state, setstate] = React.useState({
@@ -81,14 +77,14 @@ export default function MyApp(props) {
         <title>Almatar | Techgater</title>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
+      {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
+      <CssBaseline />
       <ThemeProvider theme={theme}>
-        <CssBaseline />
         <Layout
           selectedColor={(v) => setstate({ ...state, selected: checkColor(v) })}
           locale={props.router.locale}
           onChangeMode={(v) => setstate({ ...state, darkMode: v })}
         >
-          {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
           <Component {...pageProps} />
         </Layout>
       </ThemeProvider>
