@@ -4,28 +4,10 @@ import dynamic from "next/dynamic";
 import Head from "next/head";
 import { ThemeProvider } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
-import { CacheProvider } from "@emotion/react";
-import createCache from "@emotion/cache";
 import "styles/globals.scss";
-import { create } from "jss";
-import rtl from "jss-rtl";
-import { jssPreset } from "@material-ui/styles";
-import rtlPlugin from "stylis-plugin-rtl";
 import { createTheme } from "@material-ui/core/styles";
 
 const Layout = dynamic(() => import("Layouts"));
-
-const cache = createCache({ key: "muirtl", stylisPlugins: [rtlPlugin] });
-const cacheLtr = createCache({ key: "css" });
-cache.compat = true;
-// Configure JSS
-const jss = create({
-  plugins: [...jssPreset().plugins, rtl()],
-});
-
-const jssLtr = create({
-  plugins: [],
-});
 
 export default function MyApp(props) {
   const { Component, pageProps } = props;
@@ -76,7 +58,7 @@ export default function MyApp(props) {
   });
 
   return (
-    <CacheProvider value={props.router.locale === "ar" ? cache : cacheLtr}>
+    <>
       <Head>
         <title>Almatar | Techgater</title>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
@@ -92,7 +74,7 @@ export default function MyApp(props) {
           <Component {...pageProps} />
         </Layout>
       </ThemeProvider>
-    </CacheProvider>
+    </>
   );
 }
 
